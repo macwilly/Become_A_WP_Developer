@@ -1,1 +1,1 @@
-<?php
+Our Awesome Theme
