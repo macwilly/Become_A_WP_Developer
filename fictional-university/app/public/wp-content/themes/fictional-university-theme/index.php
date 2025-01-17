@@ -1,14 +1,12 @@
 <?php
-    function greet(string $name, string $color): void
-    {
-        $message = "<p>Hello my name is {$name}, my favorite color is {$color}!</p>";
-        echo $message;
-    }
+ $names = array("Brad", "John", "Jane", "Meowsalot");
+ $count = 0;
+ // The while loop is what WordPress uses to loop through the different blog posts
+//     and pages that it has.
+ while($count < count($names)) {
+     echo "<p>Hi, my name is " . $names[$count] . ".</p>";
+     $count++;
+ }
 
-    greet('John Doe', 'red');
-    greet('Jane Doe', 'green');
-?>
-<!-- bloginfo gets the information from the Setting-> General area of WordPress-->
-<!-- this is a WordPress Function -->
-<h1><?php bloginfo('name');?></h1>
-<p><?php bloginfo('description');?></p>
+ ?>
+
